@@ -1,8 +1,8 @@
 class Numii < Formula
   desc "Interactive wrapper for numi-cli smart calculator"
   homepage "https://github.com/itouuuuuuuuu/numii"
-  url "https://github.com/itouuuuuuuuu/numii/archive/refs/tags/v0.1.1.tar.gz"
-  sha256 "b69039e44805d3ad026e297f490043d8cf64287f1dc6f7196028834b2e0cada6"
+  url "https://github.com/itouuuuuuuuu/numii/archive/refs/tags/v1.0.0.tar.gz"
+  sha256 "4cfa2f1538711600d53f41668443c1ec557855c0943695d33a7c8eeff875487e"
   license "MIT"
 
   depends_on "nikolaeu/numi/numi-cli"
