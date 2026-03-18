@@ -11,6 +11,12 @@ cask "zmk-battery-bar" do
 
   app "ZMK Battery Bar.app"
 
+  caveats <<~EOS
+    This app is not notarized. To open it, run:
+      xattr -cr "/Applications/ZMK Battery Bar.app"
+    Or reinstall with: brew install --no-quarantine #{token}
+  EOS
+
   zap trash: [
     "~/Library/Preferences/com.zmk-battery-bar.app.plist",
   ]
