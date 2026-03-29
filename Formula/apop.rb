@@ -9,7 +9,7 @@ class Apop < Formula
   depends_on "fzf"
 
   def install
-    share.install "apop.sh" => "apop/apop.sh"
+    (share/"apop").install "apop.sh"
   end
 
   def caveats
