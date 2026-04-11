@@ -1,8 +1,8 @@
 class Apop < Formula
   desc "AWS Profile switcher with 1Password integration"
   homepage "https://github.com/itouuuuuuuuu/apop"
-  url "https://github.com/itouuuuuuuuu/apop/archive/refs/tags/v1.2.1.tar.gz"
-  sha256 "bf3c21a280e35144d63b098aa1e9af5912b2ab98f5f382020c3b39a081a23272"
+  url "https://github.com/itouuuuuuuuu/apop/archive/refs/tags/v1.2.2.tar.gz"
+  sha256 "e147bed9e17aed9ca5211fd6c5c90a9ab38ba5458b6fad3dbe2615e474b268cb"
   license "MIT"
 
   depends_on "jq"
