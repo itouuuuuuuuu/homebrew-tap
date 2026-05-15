@@ -1,12 +1,13 @@
 class Apop < Formula
   desc "AWS Profile switcher with 1Password integration"
   homepage "https://github.com/itouuuuuuuuu/apop"
-  url "https://github.com/itouuuuuuuuu/apop/archive/refs/tags/v1.3.0.tar.gz"
-  sha256 "7aa8cd8edf07425bb65568e0fd72802c7cbdbaf0df47ef28cc97b2ed1c6c9dd5"
+  url "https://github.com/itouuuuuuuuu/apop/archive/refs/tags/v2.0.0.tar.gz"
+  sha256 "572e5f660e7d43d35f66645d2cdb8458d04e91d2ad59b3d5a179b5b448030af2"
   license "MIT"
 
-  depends_on "jq"
   depends_on "fzf"
+  depends_on "jq"
+  depends_on :macos
 
   def install
     (share/"apop").install "apop.sh"
@@ -14,12 +15,17 @@ class Apop < Formula
 
   def caveats
     <<~EOS
-      Add the following to your ~/.zshrc:
+      To activate apop, add the following to your ~/.zshrc:
         source "$(brew --prefix)/share/apop/apop.sh"
+
+      You also need to install the following manually:
+        brew install awscli
+        brew install --cask 1password-cli
     EOS
   end
 
   test do
-    assert_match "apop", shell_output("bash -c 'source #{share}/apop/apop.sh && apop --version'")
+    output = shell_output("bash -c 'source #{share}/apop/apop.sh && apop --version'")
+    assert_match "apop", output
   end
 end
