@@ -7,7 +7,7 @@ cask "zmk-battery-bar" do
   desc "macOS menu bar app that displays battery levels from ZMK split keyboards via BLE"
   homepage "https://github.com/itouuuuuuuuu/zmk-battery-bar"
 
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
 
   app "ZMK Battery Bar.app"
 
