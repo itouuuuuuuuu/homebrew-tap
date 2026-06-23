@@ -1,6 +1,6 @@
 cask "zmk-battery-bar" do
-  version "1.4.0"
-  sha256 "d208f7d38b4f2ed2e2e98e2f953727e39fb1b771370908d30208dd97ce40106a"
+  version "1.5.0"
+  sha256 "405504c25dc498ebb61684852e745b41193252aac19d1749af1ea0811085fa5e"
 
   url "https://github.com/itouuuuuuuuu/zmk-battery-bar/releases/download/v#{version}/ZMKBatteryBar-#{version}.zip"
   name "ZMK Battery Bar"
